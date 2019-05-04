@@ -112,7 +112,7 @@ tagdata.append(send_par_level(database.get_hour_par_map(14)))
 4. Assign random coordinates in respective zones for each movement
 5. Iterate through 3 and 4 for all patients any given day
 '''
-for i in range(1,30) :
+for i in range(1,2) :
     no_of_patients_for_day = random.randint(15,23)
     patient_times = simulator_util.get_patient_times(no_of_patients_for_day, i)
     for i in range(no_of_patients_for_day) :
@@ -152,24 +152,15 @@ for i in range(1,30) :
                                              patient_times[i][6],
                                              patient_times[i][7],
                                              x1,y1, x2,y2))
-            p1,q1,p2,q2 = 138,324,937,452
-            x1,y1 = x2,y2
-            x2,y2 = simulator_util.get_random_point(p1,q1, p2,q2)
-            tagdata.append(get_patient_location(i,
-                                             "DISCHARGE",
-                                             patient_times[i][8],
-                                             patient_times[i][9],
-                                             x1,y1, x2,y2))
             
-        else :
-            p1,q1,p2,q2 = 138,324,937,452
-            x1,y1 = x2,y2
-            x2,y2 = simulator_util.get_random_point(p1,q1, p2,q2)
-            tagdata.append(get_patient_location(i,
-                                             "DISCHARGE",
-                                             patient_times[i][8],
-                                             patient_times[i][9],
-                                             x1,y1, x2,y2))
+        p1,q1,p2,q2 = 138,324,937,452
+        x1,y1 = x2,y2
+        x2,y2 = simulator_util.get_random_point(p1,q1, p2,q2)
+        tagdata.append(get_patient_location(i,
+                                            "DISCHARGE",
+                                            patient_times[i][8],
+                                            patient_times[i][9],
+                                            x1,y1, x2,y2))
 
 json_data = json.dumps(json_feed, default=simulator_util.datetime_to_string)
 with open('data.json', 'w') as outfile:
