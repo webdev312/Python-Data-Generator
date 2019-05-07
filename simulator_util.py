@@ -60,8 +60,8 @@ def get_random_point(x1, y1, x2, y2):
     else :
       coordX = x1 + random.randint(0,wd)
       coordY = y1 - 20 - random.randint(0,ht)
-    coordX = coordX - 10;
-    coordY = coordY - 10;
+    coordX = coordX - 10
+    coordY = coordY - 10
     return coordX, coordY
 
 '''
