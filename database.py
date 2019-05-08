@@ -56,6 +56,10 @@ def get_zone_by_sequence(sequence, spec_id) :
         return "emergency room"
     elif (sequence == "ROOM") :
         return spec_id
+    elif (sequence == "IMAGING") :
+        return "imaging"
+    elif (sequence == "DISCHARGE") :
+        return "exit"
 
 def get_hour_par_map(hour) :
     if hour >= 6 :
