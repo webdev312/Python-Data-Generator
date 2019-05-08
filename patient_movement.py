@@ -9,18 +9,19 @@ import json
 import database
 import simulator_util
 import random
+import datetime
 
-import class_patient
-import class_nurse
-import class_doctor
-import class_equip
+from classes import class_patient
+from classes import class_nurse
+from classes import class_doctor
+from classes import class_equip
 
-import mgnt_register
-import mgnt_triage
-import mgnt_waiting
-import mgnt_room
-import mgnt_imaging
-import mgnt_discharge
+from management import mgnt_register
+from management import mgnt_triage
+from management import mgnt_waiting
+from management import mgnt_room
+from management import mgnt_imaging
+from management import mgnt_discharge
 
 '''
 Generate stat for last few hours
@@ -103,6 +104,48 @@ def get_patient_location(patient_id, sequence, from_time, to_time, from_x, from_
     
     tag_movement["command_data"] = command_data
     return tag_movement
+
+def get_tagstats_no_of_patients(data) :
+    tag_stats = {}
+    tag_stats["command_type"] = "Tag stats"
+    
+    command_data = {}
+    command_data["stat_type"] = "No of patients"    
+    command_data["stat_values"] = []
+
+    for i in range(0, len(data)):
+        command_data["stat_values"].append(data[i])
+    
+    tag_stats["command_data"] = command_data
+    return tag_stats
+
+def get_tagstats_no_of_assets(data) :
+    tag_stats = {}
+    tag_stats["command_type"] = "Tag stats"
+    
+    command_data = {}
+    command_data["stat_type"] = "No of assets"    
+    command_data["stat_values"] = []
+
+    for i in range(0, len(data)):
+        command_data["stat_values"].append(data[i])
+    
+    tag_stats["command_data"] = command_data
+    return tag_stats
+
+def get_tagstats_len_of_stay(data) :
+    tag_stats = {}
+    tag_stats["command_type"] = "Tag stats"
+    
+    command_data = {}
+    command_data["stat_type"] = "Length of stay"    
+    command_data["stat_values"] = []
+
+    for i in range(0, len(data)):
+        command_data["stat_values"].append(data[i])
+    
+    tag_stats["command_data"] = command_data
+    return tag_stats
     
 '''
 Generate JSON feed
@@ -132,10 +175,42 @@ manage_nurse = class_nurse.Nurses()
 manage_doctor = class_doctor.Doctors()
 manage_equip = class_equip.Equips()
 
-for i in range(1, 2) :
+arr_tagstate_no_of_patients = []
+arr_tagstate_no_of_assets = []
+arr_tagstate_len_of_stay = []
+
+for i in range(1, 3) :
     no_of_patients_for_day = random.randint(15,23)    
     no_of_curr_patients = 0
+    no_of_discharged_patients = 0
+    arr_patient_len_of_stay = []
     for j in range(0, 60*24) : # loop 24 hours
+        '''
+        Tag Stats
+        '''
+        if (j % 60 == 0):
+            now = datetime.datetime.now()
+            n_day = i
+            n_hour = j / 60
+            time_now = datetime.datetime(int(now.year), int(now.month), int(n_day), int(n_hour), int(0))
+            # Number of Patients
+            tagstat_no_patient = {
+                "time": time_now,
+                "number of patients": no_of_curr_patients - no_of_discharged_patients
+            }
+            arr_tagstate_no_of_patients.append(tagstat_no_patient)
+            
+            # Number of Assets
+            n_using_assets = manage_equip.get_number_of_using_equips()
+            tagstat_no_assets = {
+                "time": time_now,
+                "number of assets": n_using_assets
+            }
+            arr_tagstate_no_of_assets.append(tagstat_no_assets)
+        '''
+        Tag Stats End
+        '''
+
         # Check if register is finished
         arr_registered = register_room.get_registered_patient(j)
         # If there are registered patients, triage them
@@ -170,7 +245,15 @@ for i in range(1, 2) :
         if (len(arr_imaged_patients) > 0):
             discharge_room.discharge_patients(arr_imaged_patients, j, tagdata)
 
+        # If there is a discharged patient, calculate stay of length and number of patient
         arr_discharged_patients = discharge_room.get_discharged_patient(j)
+        if (len(arr_discharged_patients) > 0):
+            no_of_discharged_patients += len(arr_discharged_patients)
+            for k in range(0, len(arr_discharged_patients)):
+                for n in range(0, len(arr_patient_len_of_stay)):
+                    if (arr_discharged_patients[k]["patient"].id == arr_patient_len_of_stay[n]["patient_id"]):
+                        arr_patient_len_of_stay[n]["to_time"] = j
+                        break
 
         '''
         Alert Modules like Nurses, Doctors and IV Pumps
@@ -250,7 +333,48 @@ for i in range(1, 2) :
             patient = class_patient.Patient(no_of_curr_patients)
             # register new patient
             register_room.register_patient(patient, i, j, tagdata)
-        
+            # register regist time for length of stay
+            arr_patient_len_of_stay.append({
+                "patient_id": no_of_curr_patients,
+                "from_time": j,
+                "to_time": 0
+            })
+
+    # calculate len_of_stay daily for every an hour
+    for j in range(0, 24):
+        len_of_stay_cur= 0
+        len_of_stay_prev = 0
+        for k in range(0, len(arr_patient_len_of_stay)):
+            if (j*60 <= arr_patient_len_of_stay[k]["to_time"]):
+                if (j*60 >= arr_patient_len_of_stay[k]["from_time"]):
+                    len_of_stay_cur += j*60 - arr_patient_len_of_stay[k]["from_time"]
+            else:
+                len_of_stay_cur += arr_patient_len_of_stay[k]["to_time"] - arr_patient_len_of_stay[k]["from_time"]
+        if (j > 0):
+            for k in range(0, len(arr_patient_len_of_stay)):
+                if ((j-1)*60 <= arr_patient_len_of_stay[k]["to_time"]):
+                    if ((j-1)*60 >= arr_patient_len_of_stay[k]["from_time"]):
+                        len_of_stay_prev += (j-1)*60 - arr_patient_len_of_stay[k]["from_time"]
+                else:
+                    len_of_stay_prev += arr_patient_len_of_stay[k]["to_time"] - arr_patient_len_of_stay[k]["from_time"]
+        len_of_stay = len_of_stay_cur - len_of_stay_prev
+        now = datetime.datetime.now()
+        n_day = i
+        n_hour = j
+        time_now = datetime.datetime(int(now.year), int(now.month), int(n_day), int(n_hour), int(0))
+        # Number of Patients
+        tagstat_length_stay = {
+            "time": time_now,
+            "length of stay": len_of_stay
+        }
+        arr_tagstate_len_of_stay.append(tagstat_length_stay)
+
+
+
+tagdata.append(get_tagstats_no_of_patients(arr_tagstate_no_of_patients))
+tagdata.append(get_tagstats_no_of_assets(arr_tagstate_no_of_assets))
+tagdata.append(get_tagstats_len_of_stay(arr_tagstate_len_of_stay))
+
 json_data = json.dumps(json_feed, default=simulator_util.datetime_to_string)
 with open('data.json', 'w') as outfile:
     outfile.write(json_data)
