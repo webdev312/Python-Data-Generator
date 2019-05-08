@@ -11,6 +11,10 @@ import simulator_util
 import random
 
 import class_patient
+import class_nurse
+import class_doctor
+import class_equip
+
 import mgnt_register
 import mgnt_triage
 import mgnt_waiting
@@ -110,16 +114,6 @@ json_feed["tagdata"] = tagdata
 #tagdata.append(send_par_level(database.get_hour_par_map(14)))
 
 '''
-1. 4 Nurses, 4 Doctors, 10 IV Pumps
-2. 6 Rooms
-3. Every patient can meet only 1 Nurse, 1 Doctor, 1 IV Pumps
-4. Every patient should wait if there is no remain Nurses or Doctors
-'''
-arr_nurses = ["Nurse1", "Nurse2", "Nurse3", "Nurse4"]
-arr_doctors = ["Doctor1", "Doctor2", "Doctor3", "Doctor4"]
-arr_pumps = ["IV Pump1", "IV Pump2", "IV Pump3", "IV Pump4", "IV Pump5", "IV Pump6", "IV Pump7", "IV Pump8", "IV Pump9", "IV Pump10"]
-
-'''
 1. Iterate through 30 days
 2. for each day assign random number of patient
 3. Get all sequences patient moved in the day
@@ -129,26 +123,35 @@ arr_pumps = ["IV Pump1", "IV Pump2", "IV Pump3", "IV Pump4", "IV Pump5", "IV Pum
 
 register_room = mgnt_register.Register()
 triage_room = mgnt_triage.Triage()
-waiting_room = mgnt_waiting.Waiting()
+waiting_room = mgnt_waiting.Waiting() # This is used like stack only right now
 manage_room = mgnt_room.Rooms()
 image_room = mgnt_imaging.Imaging()
 discharge_room = mgnt_discharge.Discharge()
 
+manage_nurse = class_nurse.Nurses()
+manage_doctor = class_doctor.Doctors()
+manage_equip = class_equip.Equips()
+
 for i in range(1, 2) :
-    # no_of_patients_for_day = random.randint(15,23)
-    no_of_patients_for_day = 10
+    no_of_patients_for_day = random.randint(15,23)    
     no_of_curr_patients = 0
     for j in range(0, 60*24) : # loop 24 hours
+        # Check if register is finished
         arr_registered = register_room.get_registered_patient(j)
+        # If there are registered patients, triage them
         if (len(arr_registered) > 0):
             triage_room.triage_patients(arr_registered, j, tagdata)
 
+        # Check if triage is finished
         arr_triaged = triage_room.get_triaged_patient(j)
+        # If there are triaged patients, make them to wait
         if (len(arr_triaged) > 0):
             waiting_room.make_patient_waiting_room(arr_triaged)
 
+        # Check if there are patients did everything on room
         arr_completed_patients = manage_room.get_completed_assigned_patients(j)
 
+        # If there is waiting patient and rooms are empty, move patient from waiting room to treatment room
         b_is_patient_waiting = waiting_room.check_waiting_patient()
         if (b_is_patient_waiting):
             b_is_empty_room = manage_room.is_available_room()
@@ -157,15 +160,85 @@ for i in range(1, 2) :
                 empty_room = manage_room.get_room()
                 manage_room.assign_room(waiting_patient["patient"], empty_room, i, j, tagdata)
 
+        # If there is a patient that treated, move to image room or discharge
         if (len(arr_completed_patients) > 0):
             if (random.randint(0, 1)): image_room.image_patients(arr_completed_patients, j, tagdata)
             else: discharge_room.discharge_patients(arr_completed_patients, j, tagdata)
 
+        # If there is a imaged patient, move to discharge
         arr_imaged_patients = image_room.get_imaged_patient(j)
         if (len(arr_imaged_patients) > 0):
             discharge_room.discharge_patients(arr_imaged_patients, j, tagdata)
 
         arr_discharged_patients = discharge_room.get_discharged_patient(j)
+
+        '''
+        Alert Modules like Nurses, Doctors and IV Pumps
+        '''
+        '''
+        Nurse Alert Module
+        '''
+        # Check if there is a patient that has "waiting nurse" state
+        arr_pt_waiting_nurse = manage_room.get_patient_waiting_nurse()
+        if (len(arr_pt_waiting_nurse) > 0):
+            # Check if there is a free nurse
+            b_is_free_nurse = manage_nurse.is_available_nurse()
+            if (b_is_free_nurse):
+                for k in range(0, len(arr_pt_waiting_nurse)):
+                    b_is_free_nurse = manage_nurse.is_available_nurse()
+                    if not (b_is_free_nurse): break
+                    # Call a nurse
+                    free_nurse = manage_nurse.call_nurse()
+                    manage_room.set_patient_meet_nurse(arr_pt_waiting_nurse[k], free_nurse, tagdata, j)
+        # Check if there is a patient that finish meeting nurse
+        arr_finished_nurse = manage_room.get_patient_finished_nurse(j)
+        for k in range(0, len(arr_finished_nurse)):
+            manage_nurse.return_nurse(arr_finished_nurse[k]["nurse"])
+
+        
+        '''
+        Doctor Alert Module
+        '''
+        # Check if there is a patient that has "waiting doctor" state
+        arr_pt_waiting_doctor = manage_room.get_patient_waiting_doctor()
+        if (len(arr_pt_waiting_doctor) > 0):
+            # Check if there is a free doctor
+            b_is_free_doctor = manage_doctor.is_available_doctor()
+            if (b_is_free_doctor):
+                for k in range(0, len(arr_pt_waiting_doctor)):
+                    b_is_free_doctor = manage_doctor.is_available_doctor()
+                    if not (b_is_free_doctor): break
+                    # Call a doctor
+                    free_doctor = manage_doctor.call_doctor()
+                    manage_room.set_patient_meet_doctor(arr_pt_waiting_doctor[k], free_doctor, tagdata, j)
+        # Check if there is a patient that finish meeting doctor
+        arr_finished_doctor = manage_room.get_patient_finished_doctor(j)
+        for k in range(0, len(arr_finished_doctor)):
+            manage_doctor.return_doctor(arr_finished_doctor[k]["doctor"])
+
+        
+        '''
+        Equipment Alert Module
+        '''
+        # Check if there is a patient that has "waiting equip" state
+        arr_pt_waiting_equip = manage_room.get_patient_waiting_equip()
+        if (len(arr_pt_waiting_equip) > 0):
+            # Check if there is a free equip
+            b_is_free_equip = manage_equip.is_available_equip()
+            if (b_is_free_equip):
+                for k in range(0, len(arr_pt_waiting_equip)):
+                    b_is_free_equip = manage_equip.is_available_equip()
+                    if not (b_is_free_equip): break
+                    # Call a equip
+                    free_equip = manage_equip.call_equip()
+                    manage_room.set_patient_meet_equip(arr_pt_waiting_equip[k], free_equip, tagdata, j)
+        # Check if there is a patient that finish meeting equip
+        arr_finished_equip = manage_room.get_patient_finished_equip(j)
+        for k in range(0, len(arr_finished_equip)):
+            manage_equip.return_equip(arr_finished_equip[k]["equip"])
+        '''
+        Alert Modules End
+        '''
 
         if (no_of_curr_patients < no_of_patients_for_day) :
             # There is an opportunity that new patient would be income every 5 mins
@@ -178,7 +251,6 @@ for i in range(1, 2) :
             # register new patient
             register_room.register_patient(patient, i, j, tagdata)
         
-
 json_data = json.dumps(json_feed, default=simulator_util.datetime_to_string)
 with open('data.json', 'w') as outfile:
     outfile.write(json_data)

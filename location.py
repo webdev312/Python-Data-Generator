@@ -25,3 +25,4 @@ def get_patient_location(patient_id, sequence, from_time, to_time, from_x, from_
     
     tag_movement["command_data"] = command_data
     return tag_movement
+

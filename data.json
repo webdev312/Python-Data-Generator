@@ -1,1 +1,1924 @@
-{"tagdata": [{"command_type": "Tag movement", "command_data": {"from_y": 367, "from_x": 514, "zone": "registration", "sequence": "REGISTRATION", "to_x": 900, "patient_id": 1, "to_time": "2019-05-01 00:32:00", "to_y": 413, "from_time": "2019-05-01 00:15:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 409, "from_x": 771, "zone": "registration", "sequence": "REGISTRATION", "to_x": 738, "patient_id": 2, "to_time": "2019-05-01 00:35:00", "to_y": 368, "from_time": "2019-05-01 00:20:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 340, "from_x": 732, "zone": "registration", "sequence": "REGISTRATION", "to_x": 841, "patient_id": 3, "to_time": "2019-05-01 00:35:00", "to_y": 378, "from_time": "2019-05-01 00:25:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 352, "from_x": 621, "zone": "registration", "sequence": "REGISTRATION", "to_x": 758, "patient_id": 4, "to_time": "2019-05-01 00:40:00", "to_y": 426, "from_time": "2019-05-01 00:30:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 413, "from_x": 900, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1316, "patient_id": 1, "to_time": "2019-05-01 01:03:00", "to_y": 413, "from_time": "2019-05-01 00:32:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 368, "from_x": 738, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1152, "patient_id": 2, "to_time": "2019-05-01 01:06:00", "to_y": 347, "from_time": "2019-05-01 00:35:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 378, "from_x": 841, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1462, "patient_id": 3, "to_time": "2019-05-01 01:06:00", "to_y": 375, "from_time": "2019-05-01 00:35:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 341, "from_x": 671, "zone": "registration", "sequence": "REGISTRATION", "to_x": 503, "patient_id": 5, "to_time": "2019-05-01 00:53:00", "to_y": 385, "from_time": "2019-05-01 00:35:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 426, "from_x": 758, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 899, "patient_id": 4, "to_time": "2019-05-01 01:05:00", "to_y": 400, "from_time": "2019-05-01 00:40:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 386, "from_x": 585, "zone": "registration", "sequence": "REGISTRATION", "to_x": 665, "patient_id": 6, "to_time": "2019-05-01 00:57:00", "to_y": 426, "from_time": "2019-05-01 00:45:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 385, "from_x": 503, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1114, "patient_id": 5, "to_time": "2019-05-01 01:27:00", "to_y": 369, "from_time": "2019-05-01 00:53:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 333, "from_x": 982, "zone": "registration", "sequence": "REGISTRATION", "to_x": 459, "patient_id": 7, "to_time": "2019-05-01 01:10:00", "to_y": 377, "from_time": "2019-05-01 00:55:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 426, "from_x": 665, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1153, "patient_id": 6, "to_time": "2019-05-01 01:34:00", "to_y": 393, "from_time": "2019-05-01 00:57:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 382, "from_x": 571, "zone": "registration", "sequence": "REGISTRATION", "to_x": 937, "patient_id": 8, "to_time": "2019-05-01 01:15:00", "to_y": 347, "from_time": "2019-05-01 01:00:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 413, "from_x": 1316, "zone": "Room1", "sequence": "ROOM", "to_x": 601, "patient_id": 1, "to_time": "2019-05-01 03:56:00", "to_y": 410, "from_time": "2019-05-01 01:03:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 400, "from_x": 899, "zone": "Room2", "sequence": "ROOM", "to_x": 224, "patient_id": 4, "to_time": "2019-05-01 02:07:00", "to_y": 414, "from_time": "2019-05-01 01:05:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 347, "from_x": 1152, "zone": "Room3", "sequence": "ROOM", "to_x": 572, "patient_id": 2, "to_time": "2019-05-01 02:42:00", "to_y": 329, "from_time": "2019-05-01 01:06:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 375, "from_x": 1462, "zone": "Room4", "sequence": "ROOM", "to_x": 428, "patient_id": 3, "to_time": "2019-05-01 02:54:00", "to_y": 339, "from_time": "2019-05-01 01:07:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 377, "from_x": 459, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1435, "patient_id": 7, "to_time": "2019-05-01 01:31:00", "to_y": 348, "from_time": "2019-05-01 01:10:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 333, "from_x": 526, "zone": "registration", "sequence": "REGISTRATION", "to_x": 546, "patient_id": 9, "to_time": "2019-05-01 01:30:00", "to_y": 349, "from_time": "2019-05-01 01:10:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 347, "from_x": 937, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1261, "patient_id": 8, "to_time": "2019-05-01 02:06:00", "to_y": 379, "from_time": "2019-05-01 01:15:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 349, "from_x": 553, "zone": "registration", "sequence": "REGISTRATION", "to_x": 706, "patient_id": 10, "to_time": "2019-05-01 01:28:00", "to_y": 402, "from_time": "2019-05-01 01:15:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 369, "from_x": 1114, "zone": "Room5", "sequence": "ROOM", "to_x": 391, "patient_id": 5, "to_time": "2019-05-01 04:07:00", "to_y": 343, "from_time": "2019-05-01 01:27:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 402, "from_x": 706, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 1323, "patient_id": 10, "to_time": "2019-05-01 02:12:00", "to_y": 349, "from_time": "2019-05-01 01:28:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 349, "from_x": 546, "zone": "emergency room", "sequence": "TRIAGE", "to_x": 907, "patient_id": 9, "to_time": "2019-05-01 02:13:00", "to_y": 398, "from_time": "2019-05-01 01:30:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 348, "from_x": 1435, "zone": "Room6", "sequence": "ROOM", "to_x": 568, "patient_id": 7, "to_time": "2019-05-01 04:15:00", "to_y": 4405, "from_time": "2019-05-01 01:31:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 393, "from_x": 1153, "zone": "Room2", "sequence": "ROOM", "to_x": 750, "patient_id": 6, "to_time": "2019-05-01 03:51:00", "to_y": 424, "from_time": "2019-05-01 02:07:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 414, "from_x": 224, "zone": "imaging", "sequence": "IMAGING", "to_x": 478, "patient_id": 4, "to_time": "2019-05-01 03:30:00", "to_y": 340, "from_time": "2019-05-01 02:07:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 379, "from_x": 1261, "zone": "Room3", "sequence": "ROOM", "to_x": 405, "patient_id": 8, "to_time": "2019-05-01 04:52:00", "to_y": 409, "from_time": "2019-05-01 02:42:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 329, "from_x": 572, "zone": "imaging", "sequence": "IMAGING", "to_x": 216, "patient_id": 2, "to_time": "2019-05-01 04:42:00", "to_y": 375, "from_time": "2019-05-01 02:42:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 349, "from_x": 1323, "zone": "Room4", "sequence": "ROOM", "to_x": 346, "patient_id": 10, "to_time": "2019-05-01 04:33:00", "to_y": 414, "from_time": "2019-05-01 02:54:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 339, "from_x": 428, "zone": "imaging", "sequence": "IMAGING", "to_x": 553, "patient_id": 3, "to_time": "2019-05-01 04:22:00", "to_y": 404, "from_time": "2019-05-01 02:54:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 340, "from_x": 478, "zone": "exit", "sequence": "DISCHARGE", "to_x": 654, "patient_id": 4, "to_time": "2019-05-01 03:41:00", "to_y": 338, "from_time": "2019-05-01 03:30:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 398, "from_x": 907, "zone": "Room2", "sequence": "ROOM", "to_x": 706, "patient_id": 9, "to_time": "2019-05-01 05:00:00", "to_y": 345, "from_time": "2019-05-01 03:51:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 424, "from_x": 750, "zone": "exit", "sequence": "DISCHARGE", "to_x": 803, "patient_id": 6, "to_time": "2019-05-01 04:01:00", "to_y": 370, "from_time": "2019-05-01 03:51:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 410, "from_x": 601, "zone": "imaging", "sequence": "IMAGING", "to_x": 323, "patient_id": 1, "to_time": "2019-05-01 05:28:00", "to_y": 418, "from_time": "2019-05-01 03:56:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 343, "from_x": 391, "zone": "exit", "sequence": "DISCHARGE", "to_x": 565, "patient_id": 5, "to_time": "2019-05-01 04:26:00", "to_y": 418, "from_time": "2019-05-01 04:07:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 4405, "from_x": 568, "zone": "exit", "sequence": "DISCHARGE", "to_x": 337, "patient_id": 7, "to_time": "2019-05-01 04:26:00", "to_y": 423, "from_time": "2019-05-01 04:15:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 404, "from_x": 553, "zone": "exit", "sequence": "DISCHARGE", "to_x": 264, "patient_id": 3, "to_time": "2019-05-01 04:34:00", "to_y": 415, "from_time": "2019-05-01 04:22:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 414, "from_x": 346, "zone": "exit", "sequence": "DISCHARGE", "to_x": 522, "patient_id": 10, "to_time": "2019-05-01 04:48:00", "to_y": 364, "from_time": "2019-05-01 04:33:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 375, "from_x": 216, "zone": "exit", "sequence": "DISCHARGE", "to_x": 222, "patient_id": 2, "to_time": "2019-05-01 04:53:00", "to_y": 421, "from_time": "2019-05-01 04:42:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 409, "from_x": 405, "zone": "imaging", "sequence": "IMAGING", "to_x": 638, "patient_id": 8, "to_time": "2019-05-01 06:12:00", "to_y": 384, "from_time": "2019-05-01 04:52:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 345, "from_x": 706, "zone": "exit", "sequence": "DISCHARGE", "to_x": 462, "patient_id": 9, "to_time": "2019-05-01 05:19:00", "to_y": 391, "from_time": "2019-05-01 05:00:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 418, "from_x": 323, "zone": "exit", "sequence": "DISCHARGE", "to_x": 554, "patient_id": 1, "to_time": "2019-05-01 05:42:00", "to_y": 367, "from_time": "2019-05-01 05:28:00"}}, {"command_type": "Tag movement", "command_data": {"from_y": 384, "from_x": 638, "zone": "exit", "sequence": "DISCHARGE", "to_x": 823, "patient_id": 8, "to_time": "2019-05-01 06:22:00", "to_y": 392, "from_time": "2019-05-01 06:12:00"}}]}
+{
+    "tagdata": [
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 393,
+                "from_x": 742,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 656,
+                "patient_id": 1,
+                "to_time": "2019-05-01 00:15:00",
+                "to_y": 408,
+                "from_time": "2019-05-01 00:05:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 408,
+                "from_x": 656,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1134,
+                "patient_id": 1,
+                "to_time": "2019-05-01 00:53:00",
+                "to_y": 386,
+                "from_time": "2019-05-01 00:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 357,
+                "from_x": 958,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 896,
+                "patient_id": 2,
+                "to_time": "2019-05-01 00:28:00",
+                "to_y": 397,
+                "from_time": "2019-05-01 00:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 335,
+                "from_x": 815,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 879,
+                "patient_id": 3,
+                "to_time": "2019-05-01 00:35:00",
+                "to_y": 339,
+                "from_time": "2019-05-01 00:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 397,
+                "from_x": 896,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1295,
+                "patient_id": 2,
+                "to_time": "2019-05-01 00:51:00",
+                "to_y": 348,
+                "from_time": "2019-05-01 00:28:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 377,
+                "from_x": 436,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 639,
+                "patient_id": 4,
+                "to_time": "2019-05-01 00:49:00",
+                "to_y": 383,
+                "from_time": "2019-05-01 00:30:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 339,
+                "from_x": 879,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1381,
+                "patient_id": 3,
+                "to_time": "2019-05-01 00:58:00",
+                "to_y": 402,
+                "from_time": "2019-05-01 00:35:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 416,
+                "from_x": 756,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 875,
+                "patient_id": 5,
+                "to_time": "2019-05-01 00:54:00",
+                "to_y": 363,
+                "from_time": "2019-05-01 00:35:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 383,
+                "from_x": 639,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1118,
+                "patient_id": 4,
+                "to_time": "2019-05-01 01:49:00",
+                "to_y": 415,
+                "from_time": "2019-05-01 00:49:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 419,
+                "from_x": 994,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 988,
+                "patient_id": 6,
+                "to_time": "2019-05-01 01:06:00",
+                "to_y": 395,
+                "from_time": "2019-05-01 00:50:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 348,
+                "from_x": 1295,
+                "zone": "Room1",
+                "sequence": "ROOM",
+                "to_x": 178,
+                "patient_id": 2,
+                "to_time": "2019-05-01 03:50:00",
+                "to_y": 408,
+                "from_time": "2019-05-01 00:51:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 00:55:00",
+                "zone": "Room1",
+                "patient_id": 2,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse1 : 4 Mins</p>",
+                "from_time": "2019-05-01 00:51:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 386,
+                "from_x": 1134,
+                "zone": "Room2",
+                "sequence": "ROOM",
+                "to_x": 898,
+                "patient_id": 1,
+                "to_time": "2019-05-01 03:07:00",
+                "to_y": 353,
+                "from_time": "2019-05-01 00:53:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 00:56:00",
+                "zone": "Room2",
+                "patient_id": 1,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse2 : 3 Mins</p>",
+                "from_time": "2019-05-01 00:53:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 363,
+                "from_x": 875,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1220,
+                "patient_id": 5,
+                "to_time": "2019-05-01 01:54:00",
+                "to_y": 369,
+                "from_time": "2019-05-01 00:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:00:00",
+                "zone": "Room1",
+                "patient_id": 2,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor1 : 5 Mins</p>",
+                "from_time": "2019-05-01 00:55:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:00:00",
+                "zone": "Room2",
+                "patient_id": 1,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor2 : 4 Mins</p>",
+                "from_time": "2019-05-01 00:56:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 402,
+                "from_x": 1381,
+                "zone": "Room3",
+                "sequence": "ROOM",
+                "to_x": 708,
+                "patient_id": 3,
+                "to_time": "2019-05-01 03:26:00",
+                "to_y": 345,
+                "from_time": "2019-05-01 00:58:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:02:00",
+                "zone": "Room3",
+                "patient_id": 3,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse3 : 4 Mins</p>",
+                "from_time": "2019-05-01 00:58:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:47:00",
+                "zone": "Room1",
+                "patient_id": 2,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump1 : 47 Mins</p>",
+                "from_time": "2019-05-01 01:00:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 02:05:00",
+                "zone": "Room2",
+                "patient_id": 1,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump2 : 65 Mins</p>",
+                "from_time": "2019-05-01 01:00:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 329,
+                "from_x": 766,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 580,
+                "patient_id": 7,
+                "to_time": "2019-05-01 01:15:00",
+                "to_y": 374,
+                "from_time": "2019-05-01 01:00:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:06:00",
+                "zone": "Room3",
+                "patient_id": 3,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor3 : 4 Mins</p>",
+                "from_time": "2019-05-01 01:02:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 395,
+                "from_x": 988,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 928,
+                "patient_id": 6,
+                "to_time": "2019-05-01 01:36:00",
+                "to_y": 407,
+                "from_time": "2019-05-01 01:06:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 02:02:00",
+                "zone": "Room3",
+                "patient_id": 3,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump3 : 56 Mins</p>",
+                "from_time": "2019-05-01 01:06:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 374,
+                "from_x": 580,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1271,
+                "patient_id": 7,
+                "to_time": "2019-05-01 02:12:00",
+                "to_y": 378,
+                "from_time": "2019-05-01 01:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 418,
+                "from_x": 421,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 818,
+                "patient_id": 8,
+                "to_time": "2019-05-01 01:27:00",
+                "to_y": 413,
+                "from_time": "2019-05-01 01:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 389,
+                "from_x": 669,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 828,
+                "patient_id": 9,
+                "to_time": "2019-05-01 01:43:00",
+                "to_y": 377,
+                "from_time": "2019-05-01 01:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 413,
+                "from_x": 818,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1155,
+                "patient_id": 8,
+                "to_time": "2019-05-01 02:21:00",
+                "to_y": 385,
+                "from_time": "2019-05-01 01:27:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 410,
+                "from_x": 1053,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 870,
+                "patient_id": 10,
+                "to_time": "2019-05-01 01:41:00",
+                "to_y": 364,
+                "from_time": "2019-05-01 01:30:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 407,
+                "from_x": 928,
+                "zone": "Room4",
+                "sequence": "ROOM",
+                "to_x": 323,
+                "patient_id": 6,
+                "to_time": "2019-05-01 03:21:00",
+                "to_y": 397,
+                "from_time": "2019-05-01 01:36:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:39:00",
+                "zone": "Room4",
+                "patient_id": 6,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse4 : 3 Mins</p>",
+                "from_time": "2019-05-01 01:36:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:43:00",
+                "zone": "Room4",
+                "patient_id": 6,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor4 : 4 Mins</p>",
+                "from_time": "2019-05-01 01:39:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 362,
+                "from_x": 709,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 697,
+                "patient_id": 11,
+                "to_time": "2019-05-01 01:52:00",
+                "to_y": 423,
+                "from_time": "2019-05-01 01:40:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 364,
+                "from_x": 870,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1103,
+                "patient_id": 10,
+                "to_time": "2019-05-01 02:12:00",
+                "to_y": 416,
+                "from_time": "2019-05-01 01:41:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 377,
+                "from_x": 828,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 955,
+                "patient_id": 9,
+                "to_time": "2019-05-01 02:41:00",
+                "to_y": 422,
+                "from_time": "2019-05-01 01:43:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 02:57:00",
+                "zone": "Room4",
+                "patient_id": 6,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump4 : 74 Mins</p>",
+                "from_time": "2019-05-01 01:43:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 415,
+                "from_x": 1118,
+                "zone": "Room5",
+                "sequence": "ROOM",
+                "to_x": 859,
+                "patient_id": 4,
+                "to_time": "2019-05-01 04:00:00",
+                "to_y": 359,
+                "from_time": "2019-05-01 01:49:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:54:00",
+                "zone": "Room5",
+                "patient_id": 4,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse1 : 5 Mins</p>",
+                "from_time": "2019-05-01 01:49:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 397,
+                "from_x": 678,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 574,
+                "patient_id": 12,
+                "to_time": "2019-05-01 02:05:00",
+                "to_y": 363,
+                "from_time": "2019-05-01 01:50:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 423,
+                "from_x": 697,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1309,
+                "patient_id": 11,
+                "to_time": "2019-05-01 02:44:00",
+                "to_y": 343,
+                "from_time": "2019-05-01 01:52:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 369,
+                "from_x": 1220,
+                "zone": "Room6",
+                "sequence": "ROOM",
+                "to_x": 543,
+                "patient_id": 5,
+                "to_time": "2019-05-01 04:45:00",
+                "to_y": 1604,
+                "from_time": "2019-05-01 01:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:59:00",
+                "zone": "Room6",
+                "patient_id": 5,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse2 : 5 Mins</p>",
+                "from_time": "2019-05-01 01:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 01:58:00",
+                "zone": "Room5",
+                "patient_id": 4,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor1 : 4 Mins</p>",
+                "from_time": "2019-05-01 01:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:15:00",
+                "zone": "Room5",
+                "patient_id": 4,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump5 : 77 Mins</p>",
+                "from_time": "2019-05-01 01:58:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 02:03:00",
+                "zone": "Room6",
+                "patient_id": 5,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor2 : 4 Mins</p>",
+                "from_time": "2019-05-01 01:59:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 02:49:00",
+                "zone": "Room6",
+                "patient_id": 5,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump6 : 46 Mins</p>",
+                "from_time": "2019-05-01 02:03:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 363,
+                "from_x": 574,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1282,
+                "patient_id": 12,
+                "to_time": "2019-05-01 02:32:00",
+                "to_y": 419,
+                "from_time": "2019-05-01 02:05:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 362,
+                "from_x": 766,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 785,
+                "patient_id": 13,
+                "to_time": "2019-05-01 02:30:00",
+                "to_y": 401,
+                "from_time": "2019-05-01 02:10:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 372,
+                "from_x": 965,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 673,
+                "patient_id": 14,
+                "to_time": "2019-05-01 02:25:00",
+                "to_y": 351,
+                "from_time": "2019-05-01 02:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 393,
+                "from_x": 1024,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 575,
+                "patient_id": 15,
+                "to_time": "2019-05-01 02:30:00",
+                "to_y": 344,
+                "from_time": "2019-05-01 02:20:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 351,
+                "from_x": 673,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1122,
+                "patient_id": 14,
+                "to_time": "2019-05-01 03:09:00",
+                "to_y": 404,
+                "from_time": "2019-05-01 02:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 367,
+                "from_x": 429,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 550,
+                "patient_id": 16,
+                "to_time": "2019-05-01 02:35:00",
+                "to_y": 407,
+                "from_time": "2019-05-01 02:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 401,
+                "from_x": 785,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 931,
+                "patient_id": 13,
+                "to_time": "2019-05-01 03:28:00",
+                "to_y": 347,
+                "from_time": "2019-05-01 02:30:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 344,
+                "from_x": 575,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 945,
+                "patient_id": 15,
+                "to_time": "2019-05-01 03:28:00",
+                "to_y": 332,
+                "from_time": "2019-05-01 02:30:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 407,
+                "from_x": 550,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1110,
+                "patient_id": 16,
+                "to_time": "2019-05-01 03:14:00",
+                "to_y": 363,
+                "from_time": "2019-05-01 02:35:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 403,
+                "from_x": 652,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 985,
+                "patient_id": 17,
+                "to_time": "2019-05-01 02:50:00",
+                "to_y": 337,
+                "from_time": "2019-05-01 02:35:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 391,
+                "from_x": 751,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 532,
+                "patient_id": 18,
+                "to_time": "2019-05-01 03:02:00",
+                "to_y": 347,
+                "from_time": "2019-05-01 02:45:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 337,
+                "from_x": 985,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1396,
+                "patient_id": 17,
+                "to_time": "2019-05-01 03:14:00",
+                "to_y": 351,
+                "from_time": "2019-05-01 02:50:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 347,
+                "from_x": 532,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1227,
+                "patient_id": 18,
+                "to_time": "2019-05-01 03:43:00",
+                "to_y": 329,
+                "from_time": "2019-05-01 03:02:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 378,
+                "from_x": 1271,
+                "zone": "Room2",
+                "sequence": "ROOM",
+                "to_x": 272,
+                "patient_id": 7,
+                "to_time": "2019-05-01 04:57:00",
+                "to_y": 387,
+                "from_time": "2019-05-01 03:07:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 353,
+                "from_x": 898,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 780,
+                "patient_id": 1,
+                "to_time": "2019-05-01 03:20:00",
+                "to_y": 357,
+                "from_time": "2019-05-01 03:07:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:10:00",
+                "zone": "Room2",
+                "patient_id": 7,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse3 : 3 Mins</p>",
+                "from_time": "2019-05-01 03:07:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:13:00",
+                "zone": "Room2",
+                "patient_id": 7,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor3 : 3 Mins</p>",
+                "from_time": "2019-05-01 03:10:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 395,
+                "from_x": 935,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 433,
+                "patient_id": 19,
+                "to_time": "2019-05-01 03:30:00",
+                "to_y": 375,
+                "from_time": "2019-05-01 03:10:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:26:00",
+                "zone": "Room2",
+                "patient_id": 7,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump7 : 73 Mins</p>",
+                "from_time": "2019-05-01 03:13:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 409,
+                "from_x": 576,
+                "zone": "registration",
+                "sequence": "REGISTRATION",
+                "to_x": 522,
+                "patient_id": 20,
+                "to_time": "2019-05-01 03:37:00",
+                "to_y": 413,
+                "from_time": "2019-05-01 03:20:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 416,
+                "from_x": 1103,
+                "zone": "Room4",
+                "sequence": "ROOM",
+                "to_x": 832,
+                "patient_id": 10,
+                "to_time": "2019-05-01 05:59:00",
+                "to_y": 379,
+                "from_time": "2019-05-01 03:21:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 397,
+                "from_x": 323,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 890,
+                "patient_id": 6,
+                "to_time": "2019-05-01 03:38:00",
+                "to_y": 391,
+                "from_time": "2019-05-01 03:21:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:25:00",
+                "zone": "Room4",
+                "patient_id": 10,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse4 : 4 Mins</p>",
+                "from_time": "2019-05-01 03:21:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:29:00",
+                "zone": "Room4",
+                "patient_id": 10,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor4 : 4 Mins</p>",
+                "from_time": "2019-05-01 03:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 385,
+                "from_x": 1155,
+                "zone": "Room3",
+                "sequence": "ROOM",
+                "to_x": 411,
+                "patient_id": 8,
+                "to_time": "2019-05-01 05:58:00",
+                "to_y": 417,
+                "from_time": "2019-05-01 03:26:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 345,
+                "from_x": 708,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 515,
+                "patient_id": 3,
+                "to_time": "2019-05-01 03:38:00",
+                "to_y": 335,
+                "from_time": "2019-05-01 03:26:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:31:00",
+                "zone": "Room3",
+                "patient_id": 8,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse1 : 5 Mins</p>",
+                "from_time": "2019-05-01 03:26:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:33:00",
+                "zone": "Room4",
+                "patient_id": 10,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump8 : 64 Mins</p>",
+                "from_time": "2019-05-01 03:29:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 375,
+                "from_x": 433,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1327,
+                "patient_id": 19,
+                "to_time": "2019-05-01 04:06:00",
+                "to_y": 400,
+                "from_time": "2019-05-01 03:30:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:34:00",
+                "zone": "Room3",
+                "patient_id": 8,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor1 : 3 Mins</p>",
+                "from_time": "2019-05-01 03:31:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:48:00",
+                "zone": "Room3",
+                "patient_id": 8,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump9 : 74 Mins</p>",
+                "from_time": "2019-05-01 03:34:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 413,
+                "from_x": 522,
+                "zone": "emergency room",
+                "sequence": "TRIAGE",
+                "to_x": 1336,
+                "patient_id": 20,
+                "to_time": "2019-05-01 04:35:00",
+                "to_y": 349,
+                "from_time": "2019-05-01 03:37:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 419,
+                "from_x": 1282,
+                "zone": "Room1",
+                "sequence": "ROOM",
+                "to_x": 528,
+                "patient_id": 12,
+                "to_time": "2019-05-01 06:45:00",
+                "to_y": 387,
+                "from_time": "2019-05-01 03:50:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 408,
+                "from_x": 178,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 333,
+                "patient_id": 2,
+                "to_time": "2019-05-01 04:54:00",
+                "to_y": 369,
+                "from_time": "2019-05-01 03:50:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:54:00",
+                "zone": "Room1",
+                "patient_id": 12,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse2 : 4 Mins</p>",
+                "from_time": "2019-05-01 03:50:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 03:58:00",
+                "zone": "Room1",
+                "patient_id": 12,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor2 : 4 Mins</p>",
+                "from_time": "2019-05-01 03:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:42:00",
+                "zone": "Room1",
+                "patient_id": 12,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump10 : 44 Mins</p>",
+                "from_time": "2019-05-01 03:58:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 422,
+                "from_x": 955,
+                "zone": "Room5",
+                "sequence": "ROOM",
+                "to_x": 507,
+                "patient_id": 9,
+                "to_time": "2019-05-01 06:21:00",
+                "to_y": 369,
+                "from_time": "2019-05-01 04:00:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 359,
+                "from_x": 859,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 816,
+                "patient_id": 4,
+                "to_time": "2019-05-01 04:10:00",
+                "to_y": 403,
+                "from_time": "2019-05-01 04:00:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:03:00",
+                "zone": "Room5",
+                "patient_id": 9,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse3 : 3 Mins</p>",
+                "from_time": "2019-05-01 04:00:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:08:00",
+                "zone": "Room5",
+                "patient_id": 9,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor3 : 5 Mins</p>",
+                "from_time": "2019-05-01 04:03:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 05:28:00",
+                "zone": "Room5",
+                "patient_id": 9,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump1 : 80 Mins</p>",
+                "from_time": "2019-05-01 04:08:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 343,
+                "from_x": 1309,
+                "zone": "Room6",
+                "sequence": "ROOM",
+                "to_x": 534,
+                "patient_id": 11,
+                "to_time": "2019-05-01 07:44:00",
+                "to_y": 869,
+                "from_time": "2019-05-01 04:45:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 1604,
+                "from_x": 543,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 193,
+                "patient_id": 5,
+                "to_time": "2019-05-01 06:39:00",
+                "to_y": 405,
+                "from_time": "2019-05-01 04:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:49:00",
+                "zone": "Room6",
+                "patient_id": 11,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse4 : 4 Mins</p>",
+                "from_time": "2019-05-01 04:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 04:54:00",
+                "zone": "Room6",
+                "patient_id": 11,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor4 : 5 Mins</p>",
+                "from_time": "2019-05-01 04:49:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 369,
+                "from_x": 333,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 359,
+                "patient_id": 2,
+                "to_time": "2019-05-01 05:09:00",
+                "to_y": 370,
+                "from_time": "2019-05-01 04:54:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:16:00",
+                "zone": "Room6",
+                "patient_id": 11,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump3 : 82 Mins</p>",
+                "from_time": "2019-05-01 04:54:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 404,
+                "from_x": 1122,
+                "zone": "Room2",
+                "sequence": "ROOM",
+                "to_x": 662,
+                "patient_id": 14,
+                "to_time": "2019-05-01 07:45:00",
+                "to_y": 330,
+                "from_time": "2019-05-01 04:57:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 387,
+                "from_x": 272,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 707,
+                "patient_id": 7,
+                "to_time": "2019-05-01 06:56:00",
+                "to_y": 416,
+                "from_time": "2019-05-01 04:57:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 05:02:00",
+                "zone": "Room2",
+                "patient_id": 14,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse1 : 5 Mins</p>",
+                "from_time": "2019-05-01 04:57:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 05:05:00",
+                "zone": "Room2",
+                "patient_id": 14,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor1 : 3 Mins</p>",
+                "from_time": "2019-05-01 05:02:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:06:00",
+                "zone": "Room2",
+                "patient_id": 14,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump2 : 61 Mins</p>",
+                "from_time": "2019-05-01 05:05:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 363,
+                "from_x": 1110,
+                "zone": "Room3",
+                "sequence": "ROOM",
+                "to_x": 650,
+                "patient_id": 16,
+                "to_time": "2019-05-01 07:39:00",
+                "to_y": 411,
+                "from_time": "2019-05-01 05:58:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 417,
+                "from_x": 411,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 747,
+                "patient_id": 8,
+                "to_time": "2019-05-01 07:50:00",
+                "to_y": 337,
+                "from_time": "2019-05-01 05:58:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:01:00",
+                "zone": "Room3",
+                "patient_id": 16,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse2 : 3 Mins</p>",
+                "from_time": "2019-05-01 05:58:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 351,
+                "from_x": 1396,
+                "zone": "Room4",
+                "sequence": "ROOM",
+                "to_x": 667,
+                "patient_id": 17,
+                "to_time": "2019-05-01 08:07:00",
+                "to_y": 349,
+                "from_time": "2019-05-01 05:59:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 379,
+                "from_x": 832,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 396,
+                "patient_id": 10,
+                "to_time": "2019-05-01 06:16:00",
+                "to_y": 407,
+                "from_time": "2019-05-01 05:59:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:03:00",
+                "zone": "Room4",
+                "patient_id": 17,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse3 : 4 Mins</p>",
+                "from_time": "2019-05-01 05:59:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:04:00",
+                "zone": "Room3",
+                "patient_id": 16,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor2 : 3 Mins</p>",
+                "from_time": "2019-05-01 06:01:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:08:00",
+                "zone": "Room4",
+                "patient_id": 17,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor3 : 5 Mins</p>",
+                "from_time": "2019-05-01 06:03:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:18:00",
+                "zone": "Room3",
+                "patient_id": 16,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump6 : 74 Mins</p>",
+                "from_time": "2019-05-01 06:04:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:23:00",
+                "zone": "Room4",
+                "patient_id": 17,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump4 : 75 Mins</p>",
+                "from_time": "2019-05-01 06:08:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 347,
+                "from_x": 931,
+                "zone": "Room5",
+                "sequence": "ROOM",
+                "to_x": 837,
+                "patient_id": 13,
+                "to_time": "2019-05-01 09:19:00",
+                "to_y": 331,
+                "from_time": "2019-05-01 06:21:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 369,
+                "from_x": 507,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 908,
+                "patient_id": 9,
+                "to_time": "2019-05-01 08:04:00",
+                "to_y": 382,
+                "from_time": "2019-05-01 06:21:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:25:00",
+                "zone": "Room5",
+                "patient_id": 13,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse4 : 4 Mins</p>",
+                "from_time": "2019-05-01 06:21:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:29:00",
+                "zone": "Room5",
+                "patient_id": 13,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor4 : 4 Mins</p>",
+                "from_time": "2019-05-01 06:25:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:13:00",
+                "zone": "Room5",
+                "patient_id": 13,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump5 : 44 Mins</p>",
+                "from_time": "2019-05-01 06:29:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 405,
+                "from_x": 193,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 422,
+                "patient_id": 5,
+                "to_time": "2019-05-01 06:52:00",
+                "to_y": 406,
+                "from_time": "2019-05-01 06:39:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 332,
+                "from_x": 945,
+                "zone": "Room1",
+                "sequence": "ROOM",
+                "to_x": 863,
+                "patient_id": 15,
+                "to_time": "2019-05-01 09:18:00",
+                "to_y": 330,
+                "from_time": "2019-05-01 06:45:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 387,
+                "from_x": 528,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 518,
+                "patient_id": 12,
+                "to_time": "2019-05-01 07:00:00",
+                "to_y": 411,
+                "from_time": "2019-05-01 06:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:48:00",
+                "zone": "Room1",
+                "patient_id": 15,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse1 : 3 Mins</p>",
+                "from_time": "2019-05-01 06:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 06:51:00",
+                "zone": "Room1",
+                "patient_id": 15,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor1 : 3 Mins</p>",
+                "from_time": "2019-05-01 06:48:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:48:00",
+                "zone": "Room1",
+                "patient_id": 15,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump7 : 57 Mins</p>",
+                "from_time": "2019-05-01 06:51:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 416,
+                "from_x": 707,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 243,
+                "patient_id": 7,
+                "to_time": "2019-05-01 07:07:00",
+                "to_y": 389,
+                "from_time": "2019-05-01 06:56:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 329,
+                "from_x": 1227,
+                "zone": "Room3",
+                "sequence": "ROOM",
+                "to_x": 416,
+                "patient_id": 18,
+                "to_time": "2019-05-01 10:15:00",
+                "to_y": 363,
+                "from_time": "2019-05-01 07:39:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 411,
+                "from_x": 650,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 170,
+                "patient_id": 16,
+                "to_time": "2019-05-01 08:42:00",
+                "to_y": 424,
+                "from_time": "2019-05-01 07:39:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:43:00",
+                "zone": "Room3",
+                "patient_id": 18,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse2 : 4 Mins</p>",
+                "from_time": "2019-05-01 07:39:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:46:00",
+                "zone": "Room3",
+                "patient_id": 18,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor2 : 3 Mins</p>",
+                "from_time": "2019-05-01 07:43:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 400,
+                "from_x": 1327,
+                "zone": "Room6",
+                "sequence": "ROOM",
+                "to_x": 437,
+                "patient_id": 19,
+                "to_time": "2019-05-01 10:44:00",
+                "to_y": 3534,
+                "from_time": "2019-05-01 07:44:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 869,
+                "from_x": 534,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 191,
+                "patient_id": 11,
+                "to_time": "2019-05-01 09:24:00",
+                "to_y": 408,
+                "from_time": "2019-05-01 07:44:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:48:00",
+                "zone": "Room6",
+                "patient_id": 19,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse3 : 4 Mins</p>",
+                "from_time": "2019-05-01 07:44:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 349,
+                "from_x": 1336,
+                "zone": "Room2",
+                "sequence": "ROOM",
+                "to_x": 216,
+                "patient_id": 20,
+                "to_time": "2019-05-01 09:50:00",
+                "to_y": 417,
+                "from_time": "2019-05-01 07:45:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 330,
+                "from_x": 662,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 149,
+                "patient_id": 14,
+                "to_time": "2019-05-01 09:25:00",
+                "to_y": 353,
+                "from_time": "2019-05-01 07:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:49:00",
+                "zone": "Room2",
+                "patient_id": 20,
+                "alert_text": "<div>Nurse in Room</div><p>meet Nurse4 : 4 Mins</p>",
+                "from_time": "2019-05-01 07:45:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 09:00:00",
+                "zone": "Room3",
+                "patient_id": 18,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump8 : 74 Mins</p>",
+                "from_time": "2019-05-01 07:46:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:51:00",
+                "zone": "Room6",
+                "patient_id": 19,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor3 : 3 Mins</p>",
+                "from_time": "2019-05-01 07:48:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 07:53:00",
+                "zone": "Room2",
+                "patient_id": 20,
+                "alert_text": "<div>Doctor in Room</div><p>meet Doctor4 : 4 Mins</p>",
+                "from_time": "2019-05-01 07:49:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 337,
+                "from_x": 747,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 366,
+                "patient_id": 8,
+                "to_time": "2019-05-01 08:06:00",
+                "to_y": 383,
+                "from_time": "2019-05-01 07:50:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 09:04:00",
+                "zone": "Room6",
+                "patient_id": 19,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump10 : 73 Mins</p>",
+                "from_time": "2019-05-01 07:51:00"
+            }
+        },
+        {
+            "command_type": "Tag alert",
+            "command_data": {
+                "alert_type": "patient in room",
+                "to_time": "2019-05-01 09:23:00",
+                "zone": "Room2",
+                "patient_id": 20,
+                "alert_text": "<div>IV Pump in Room</div><p>infusion IV Pump9 : 90 Mins</p>",
+                "from_time": "2019-05-01 07:53:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 382,
+                "from_x": 908,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 901,
+                "patient_id": 9,
+                "to_time": "2019-05-01 08:17:00",
+                "to_y": 365,
+                "from_time": "2019-05-01 08:04:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 349,
+                "from_x": 667,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 441,
+                "patient_id": 17,
+                "to_time": "2019-05-01 08:18:00",
+                "to_y": 359,
+                "from_time": "2019-05-01 08:07:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 424,
+                "from_x": 170,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 586,
+                "patient_id": 16,
+                "to_time": "2019-05-01 08:56:00",
+                "to_y": 394,
+                "from_time": "2019-05-01 08:42:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 330,
+                "from_x": 863,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 503,
+                "patient_id": 15,
+                "to_time": "2019-05-01 09:32:00",
+                "to_y": 333,
+                "from_time": "2019-05-01 09:18:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 331,
+                "from_x": 837,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 833,
+                "patient_id": 13,
+                "to_time": "2019-05-01 09:34:00",
+                "to_y": 381,
+                "from_time": "2019-05-01 09:19:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 408,
+                "from_x": 191,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 650,
+                "patient_id": 11,
+                "to_time": "2019-05-01 09:37:00",
+                "to_y": 381,
+                "from_time": "2019-05-01 09:24:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 353,
+                "from_x": 149,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 625,
+                "patient_id": 14,
+                "to_time": "2019-05-01 09:39:00",
+                "to_y": 398,
+                "from_time": "2019-05-01 09:25:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 417,
+                "from_x": 216,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 500,
+                "patient_id": 20,
+                "to_time": "2019-05-01 11:29:00",
+                "to_y": 366,
+                "from_time": "2019-05-01 09:50:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 363,
+                "from_x": 416,
+                "zone": "imaging",
+                "sequence": "IMAGING",
+                "to_x": 895,
+                "patient_id": 18,
+                "to_time": "2019-05-01 11:39:00",
+                "to_y": 353,
+                "from_time": "2019-05-01 10:15:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 3534,
+                "from_x": 437,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 280,
+                "patient_id": 19,
+                "to_time": "2019-05-01 10:59:00",
+                "to_y": 385,
+                "from_time": "2019-05-01 10:44:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 366,
+                "from_x": 500,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 797,
+                "patient_id": 20,
+                "to_time": "2019-05-01 11:39:00",
+                "to_y": 384,
+                "from_time": "2019-05-01 11:29:00"
+            }
+        },
+        {
+            "command_type": "Tag movement",
+            "command_data": {
+                "from_y": 353,
+                "from_x": 895,
+                "zone": "exit",
+                "sequence": "DISCHARGE",
+                "to_x": 880,
+                "patient_id": 18,
+                "to_time": "2019-05-01 11:50:00",
+                "to_y": 398,
+                "from_time": "2019-05-01 11:39:00"
+            }
+        }
+    ]
+}

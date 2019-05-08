@@ -5,7 +5,7 @@ class Nurses:
         self.arr_nurses = ["Nurse1", "Nurse2", "Nurse3", "Nurse4"]
     
     def is_available_nurse(self):
-        if (self.arr_nurses.count > 0):
+        if (len(self.arr_nurses) > 0):
             return True
         return False
     
