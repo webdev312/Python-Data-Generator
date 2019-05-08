@@ -179,7 +179,7 @@ arr_tagstate_no_of_patients = []
 arr_tagstate_no_of_assets = []
 arr_tagstate_len_of_stay = []
 
-for i in range(1, 3) :
+for i in range(1, 30) :
     no_of_patients_for_day = random.randint(15,23)    
     no_of_curr_patients = 0
     no_of_discharged_patients = 0
