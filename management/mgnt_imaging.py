@@ -4,6 +4,7 @@ import math
 
 import location
 import simulator_util
+import alert
 
 class Imaging:
     # Imaging JSON Format
@@ -47,6 +48,7 @@ class Imaging:
                                          from_time,
                                          to_time,
                                          x1,y1, x2,y2))
+        tagdata.append(alert.get_image_alert(patient_info["patient"].id, from_time, to_time, n_seq, x2, y2))
         
         patient_info["patient"].x = x2
         patient_info["patient"].y = y2
