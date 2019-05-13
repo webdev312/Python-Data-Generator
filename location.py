@@ -14,6 +14,8 @@ def get_patient_location(patient_id, sequence, from_time, to_time, from_x, from_
     
     command_data["from_time"] = from_time
     command_data["to_time"] = to_time
+
+    command_data["icon"] = "patient.svg"
     
     command_data["from_x"] = from_x
     command_data["from_y"] = from_y

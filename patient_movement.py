@@ -325,17 +325,18 @@ for i in range(1, 30) :
 
         if (no_of_curr_patients < no_of_patients_for_day) :
             # There is an opportunity that new patient would be income every 5 mins
-            b_is_new_patient = random.randint(0, 1) if (j % 5 == 0) else 0
+            b_is_new_patient = random.randint(0, 1) if (j % 5 == 0) and (j > 0) else 0
             if (b_is_new_patient == 0) : continue
             no_of_curr_patients += 1
 
             # create new patient
-            patient = class_patient.Patient(no_of_curr_patients)
+            uuid = str(i) + "_" + str(no_of_curr_patients)
+            patient = class_patient.Patient(uuid)
             # register new patient
             register_room.register_patient(patient, i, j, tagdata)
             # register regist time for length of stay
             arr_patient_len_of_stay.append({
-                "patient_id": no_of_curr_patients,
+                "patient_id": uuid,
                 "from_time": j,
                 "to_time": 0
             })

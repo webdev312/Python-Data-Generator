@@ -12,6 +12,29 @@ import datetime as dt
 '''
 Get a random point between two coordinates
 '''
+def get_point_by_position(position):
+  if (position == "enter"):
+    return -5, 301
+  elif (position == "registration"):
+    return 240, 291
+  elif (position == "triage"):
+    return 95, 146
+  elif (position == "Room1"):
+    return 35, 136
+  elif (position == "Room2"):
+    return -15, 136
+  elif (position == "Room3"):
+    return -65, 136
+  elif (position == "Room4"):
+    return -65, 181
+  elif (position == "Room5"):
+    return -15, 181
+  elif (position == "Room6"):
+    return 35, 181
+  elif (position == "image"):
+    return 195, 91
+  elif (position == "discharge"):
+    return 240, 291
 def get_random_point(x1, y1, x2, y2):
     midX = x1 + (x2 - x1) / 2
     midY = y1 - (y1 - y2) / 2

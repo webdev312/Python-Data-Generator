@@ -40,9 +40,8 @@ class Discharge:
         from_time = datetime.datetime(int(now.year), int(now.month), int(n_day), int(n_hour), int(n_min))
         to_time = from_time + datetime.timedelta(minutes = int(n_seq))
 
-        p1,q1,p2,q2 = 138,324,937,452
         x1,y1 = patient_info["patient"].x,patient_info["patient"].y
-        x2,y2 = simulator_util.get_random_point(p1,q1, p2,q2)        
+        x2,y2 = simulator_util.get_point_by_position("discharge")
         tagdata.append(location.get_patient_location(patient_info["patient"].id,
                                          "DISCHARGE",
                                          from_time,
