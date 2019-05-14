@@ -53,7 +53,7 @@ def get_nurse_alert(patient_id, from_time, to_time, delay, nurse, room) :
     command_data["zone"] = room
 
     command_data["alert_type"] = "patient in room"
-    command_data["alert_text"] = "<div>Nurse in Room</div><p>meet " + nurse + " : " + repr(delay) + " Mins</p>"
+    command_data["alert_text"] = "<div>Nurse in Room</div><p>meet " + nurse + " : " + repr(delay) + " mins</p>"
     
     tag_movement["command_data"] = command_data
     return tag_movement
@@ -71,7 +71,7 @@ def get_doctor_alert(patient_id, from_time, to_time, delay, doctor, room) :
     command_data["zone"] = room
 
     command_data["alert_type"] = "patient in room"
-    command_data["alert_text"] = "<div>Doctor in Room</div><p>meet " + doctor + " : " + repr(delay) + " Mins</p>"
+    command_data["alert_text"] = "<div>Doctor in Room</div><p>meet " + doctor + " : " + repr(delay) + " mins</p>"
     
     tag_movement["command_data"] = command_data
     return tag_movement
@@ -89,7 +89,7 @@ def get_equip_alert(patient_id, from_time, to_time, delay, equip, room) :
     command_data["zone"] = room
 
     command_data["alert_type"] = "patient in room"
-    command_data["alert_text"] = "<div>IV Pump in Room</div><p>infusion " + equip + " : " + repr(delay) + " Mins</p>"
+    command_data["alert_text"] = "<div>" + equip + " in Room</div><p>Infusion : " + repr(delay) + " mins</p>"
     
     tag_movement["command_data"] = command_data
     return tag_movement

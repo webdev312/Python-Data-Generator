@@ -16,25 +16,33 @@ def get_point_by_position(position):
   if (position == "enter"):
     return -5, 301
   elif (position == "registration"):
-    return 240, 291
+    x = 130 + random.randint(0, 60)
+    y = 150 + random.randint(0, 100)
+    return x, y
   elif (position == "triage"):
-    return 95, 146
+    x = -80 + random.randint(0, 155)
+    y = 80 + random.randint(0, 20)
+    return x, y
   elif (position == "Room1"):
-    return 35, 136
+    return 24, 150
   elif (position == "Room2"):
-    return -15, 136
+    return -24, 150
   elif (position == "Room3"):
-    return -65, 136
+    return -76, 150
   elif (position == "Room4"):
-    return -65, 181
+    return -75, 203
   elif (position == "Room5"):
-    return -15, 181
+    return -24, 203
   elif (position == "Room6"):
-    return 35, 181
+    return 24, 203
   elif (position == "image"):
-    return 195, 91
+    x = 100 + random.randint(0, 138)
+    y = 80 + random.randint(0, 20)
+    return x, y
   elif (position == "discharge"):
-    return 240, 291
+    x = 20 + random.randint(0, 210)
+    y = 310 + random.randint(0, 30)
+    return x, y
 def get_random_point(x1, y1, x2, y2):
     midX = x1 + (x2 - x1) / 2
     midY = y1 - (y1 - y2) / 2
