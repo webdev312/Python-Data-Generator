@@ -146,6 +146,20 @@ def get_tagstats_len_of_stay(data) :
     
     tag_stats["command_data"] = command_data
     return tag_stats
+
+def get_tagstats_room_turnover(data) :
+    tag_stats = {}
+    tag_stats["command_type"] = "Tag stats"
+    
+    command_data = {}
+    command_data["stat_type"] = "Room turnover"    
+    command_data["stat_values"] = []
+
+    for i in range(0, len(data)):
+        command_data["stat_values"].append(data[i])
+    
+    tag_stats["command_data"] = command_data
+    return tag_stats
     
 '''
 Generate JSON feed
@@ -178,12 +192,14 @@ manage_equip = class_equip.Equips()
 arr_tagstate_no_of_patients = []
 arr_tagstate_no_of_assets = []
 arr_tagstate_len_of_stay = []
+arr_tagstate_room_turnover = []
 
 for i in range(1, 30) :
     no_of_patients_for_day = random.randint(15,23)    
     no_of_curr_patients = 0
     no_of_discharged_patients = 0
     arr_patient_len_of_stay = []
+    arr_patient_room_of_stay = []
     for j in range(0, 60*24) : # loop 24 hours
         '''
         Tag Stats
@@ -234,11 +250,23 @@ for i in range(1, 30) :
                 waiting_patient = waiting_room.get_first_waiting_patient()                
                 empty_room = manage_room.get_room()
                 manage_room.assign_room(waiting_patient["patient"], empty_room, i, j, tagdata)
+                # register room turnover time starts
+                arr_patient_room_of_stay.append({
+                    "patient_id": waiting_patient["patient"].id,
+                    "from_time": j,
+                    "to_time": 0
+                })
 
         # If there is a patient that treated, move to image room or discharge
         if (len(arr_completed_patients) > 0):
             if (random.randint(0, 1)): image_room.image_patients(arr_completed_patients, j, tagdata)
             else: discharge_room.discharge_patients(arr_completed_patients, j, tagdata)
+            # register room turnover time ends
+            for k in range(0, len(arr_completed_patients)):
+                for n in range(0, len(arr_patient_room_of_stay)):
+                    if (arr_completed_patients[k]["patient"].id == arr_patient_room_of_stay[n]["patient_id"]):
+                        arr_patient_room_of_stay[n]["to_time"] = j
+                        break
 
         # If there is a imaged patient, move to discharge
         arr_imaged_patients = image_room.get_imaged_patient(j)
@@ -370,11 +398,41 @@ for i in range(1, 30) :
         }
         arr_tagstate_len_of_stay.append(tagstat_length_stay)
 
+    # calculate room_turnover time daily for every an hour
+    for j in range(0, 24):
+        len_of_room_cur= 0
+        len_of_room_prev = 0
+        for k in range(0, len(arr_patient_room_of_stay)):
+            if (j*60 <= arr_patient_room_of_stay[k]["to_time"]):
+                if (j*60 >= arr_patient_room_of_stay[k]["from_time"]):
+                    len_of_room_cur += j*60 - arr_patient_room_of_stay[k]["from_time"]
+            else:
+                len_of_room_cur += arr_patient_room_of_stay[k]["to_time"] - arr_patient_room_of_stay[k]["from_time"]
+        if (j > 0):
+            for k in range(0, len(arr_patient_room_of_stay)):
+                if ((j-1)*60 <= arr_patient_room_of_stay[k]["to_time"]):
+                    if ((j-1)*60 >= arr_patient_room_of_stay[k]["from_time"]):
+                        len_of_room_prev += (j-1)*60 - arr_patient_room_of_stay[k]["from_time"]
+                else:
+                    len_of_room_prev += arr_patient_room_of_stay[k]["to_time"] - arr_patient_room_of_stay[k]["from_time"]
+        len_of_room = len_of_room_cur - len_of_room_prev
+        now = datetime.datetime.now()
+        n_day = i
+        n_hour = j
+        time_now = datetime.datetime(int(now.year), int(now.month), int(n_day), int(n_hour), int(0))
+        # Number of Patients
+        tagstat_length_room = {
+            "time": time_now,
+            "turnover time": len_of_room
+        }
+        arr_tagstate_room_turnover.append(tagstat_length_room)
+
 
 
 tagdata.append(get_tagstats_no_of_patients(arr_tagstate_no_of_patients))
 tagdata.append(get_tagstats_no_of_assets(arr_tagstate_no_of_assets))
 tagdata.append(get_tagstats_len_of_stay(arr_tagstate_len_of_stay))
+tagdata.append(get_tagstats_room_turnover(arr_tagstate_room_turnover))
 
 json_data = json.dumps(json_feed, default=simulator_util.datetime_to_string)
 with open('data.json', 'w') as outfile:

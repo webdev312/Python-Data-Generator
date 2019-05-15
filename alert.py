@@ -40,7 +40,7 @@ def get_triage_alert(patient_id, from_time, to_time, delay, x, y) :
     tag_movement["command_data"] = command_data
     return tag_movement
 
-def get_nurse_alert(patient_id, from_time, to_time, delay, nurse, room) :
+def get_nurse_alert(patient_id, from_time, to_time, delay, nurse, room, x, y) :
     tag_movement = {}
     tag_movement["command_type"] = "Tag alert"
     
@@ -51,6 +51,9 @@ def get_nurse_alert(patient_id, from_time, to_time, delay, nurse, room) :
     command_data["to_time"] = to_time
     
     command_data["zone"] = room
+
+    command_data["x"] = x
+    command_data["y"] = y
 
     command_data["alert_type"] = "patient in room"
     command_data["alert_text"] = "<div>Nurse in Room</div><p>meet " + nurse + " : " + repr(delay) + " mins</p>"
@@ -58,7 +61,7 @@ def get_nurse_alert(patient_id, from_time, to_time, delay, nurse, room) :
     tag_movement["command_data"] = command_data
     return tag_movement
 
-def get_doctor_alert(patient_id, from_time, to_time, delay, doctor, room) :
+def get_doctor_alert(patient_id, from_time, to_time, delay, doctor, room, x, y) :
     tag_movement = {}
     tag_movement["command_type"] = "Tag alert"
     
@@ -69,6 +72,9 @@ def get_doctor_alert(patient_id, from_time, to_time, delay, doctor, room) :
     command_data["to_time"] = to_time
     
     command_data["zone"] = room
+
+    command_data["x"] = x
+    command_data["y"] = y
 
     command_data["alert_type"] = "patient in room"
     command_data["alert_text"] = "<div>Doctor in Room</div><p>meet " + doctor + " : " + repr(delay) + " mins</p>"
@@ -76,7 +82,7 @@ def get_doctor_alert(patient_id, from_time, to_time, delay, doctor, room) :
     tag_movement["command_data"] = command_data
     return tag_movement
 
-def get_equip_alert(patient_id, from_time, to_time, delay, equip, room) :
+def get_equip_alert(patient_id, from_time, to_time, delay, equip, room, x, y) :
     tag_movement = {}
     tag_movement["command_type"] = "Tag alert"
     
@@ -87,6 +93,9 @@ def get_equip_alert(patient_id, from_time, to_time, delay, equip, room) :
     command_data["to_time"] = to_time
     
     command_data["zone"] = room
+
+    command_data["x"] = x
+    command_data["y"] = y
 
     command_data["alert_type"] = "patient in room"
     command_data["alert_text"] = "<div>" + equip + " in Room</div><p>Infusion : " + repr(delay) + " mins</p>"

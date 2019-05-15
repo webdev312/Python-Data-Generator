@@ -131,7 +131,9 @@ class Rooms:
                                          to_time,
                                          delay,
                                          nurse,
-                                         room_state["room"]))
+                                         room_state["room"],
+                                         room_state["patient"].x,
+                                         room_state["patient"].y))
 
     def get_patient_finished_nurse(self, mins):
         arr_pt_finished_nurse = []
@@ -174,7 +176,9 @@ class Rooms:
                                          to_time,
                                          delay,
                                          doctor,
-                                         room_state["room"]))
+                                         room_state["room"],
+                                         room_state["patient"].x,
+                                         room_state["patient"].y))
 
     def get_patient_finished_doctor(self, mins):
         arr_pt_finished_doctor = []
@@ -217,7 +221,9 @@ class Rooms:
                                             to_time,
                                             delay,
                                             equip,
-                                            room_state["room"]))
+                                            room_state["room"],
+                                            room_state["patient"].x,
+                                            room_state["patient"].y))
 
     def get_patient_finished_equip(self, mins):
         arr_pt_finished_equip = []
