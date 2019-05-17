@@ -49,6 +49,21 @@ def get_room_position(room_id) :
     elif (room_id == "NOROOM") :
         return 138,324,937,4521
 
+def get_zone_by_position(from_x, from_y) :
+    if (from_x == 24 and from_y == 150):
+        return "Room1"
+    elif (from_x == -24 and from_y == 150):
+        return "Room2"
+    elif (from_x == -76 and from_y == 150):
+        return "Room3"
+    elif (from_x == -75 and from_y == 203):
+        return "Room4"
+    elif (from_x == -24 and from_y == 203):
+        return "Room5"
+    elif (from_x == 24 and from_y == 203):
+        return "Room6"
+    return ""
+
 def get_zone_by_sequence(sequence, spec_id) :
     if (sequence == "REGISTRATION") :
         return "registration"

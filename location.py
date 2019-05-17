@@ -23,7 +23,8 @@ def get_patient_location(patient_id, sequence, from_time, to_time, from_x, from_
     command_data["to_x"] = to_x
     command_data["to_y"] = to_y
     
-    command_data["zone"] = database.get_zone_by_sequence(sequence, spec_id)
+    command_data["from_zone"] = database.get_zone_by_position(from_x, from_y)
+    command_data["to_zone"] = database.get_zone_by_sequence(sequence, spec_id)
     
     tag_movement["command_data"] = command_data
     return tag_movement
