@@ -2,7 +2,7 @@ def get_registration_alert(patient_id, from_time, to_time, delay, x, y) :
     tag_movement = {}
     tag_movement["command_type"] = "Tag alert"
     
-    command_data = {}
+    command_data= {}
     command_data["patient_id"] = patient_id
     
     command_data["from_time"] = from_time
